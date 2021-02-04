@@ -11,6 +11,12 @@ package kittysterminator;
  */
 public class Control implements Runnable{
     
+    private char[][] field;
+
+    public Control(char[][] field) {
+        this.field = field;
+    }
+    
     @Override
     public void run() {
         

@@ -10,6 +10,11 @@ package kittysterminator;
  * @author sesana.federico
  */
 public class NuclearMissile implements Runnable{
+    private char[][] field;
+
+    public NuclearMissile(char[][] field) {
+        this.field = field;
+    }
     
     @Override
     public void run() {
